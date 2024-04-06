@@ -1,0 +1,108 @@
+@import '@styles/variables';
+
+.jobCard{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    background: $bg_island;
+    border-radius: 16px;
+
+    .salary{
+        text-overflow: ellipsis;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    a{
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        border: 1px solid $brand_color;
+        border-radius: 8px;
+        color: $brand_color;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 400ms;
+    }
+
+    a:hover{
+        background: $brand_color;
+        color: $text_invert;
+    }
+
+    &.contrast{
+        .salary{
+            color: $brand_color;
+        }
+
+        a{
+            background: $brand_color;
+            color: $text_invert;
+        }
+    }
+}
+
+.job_info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main_info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.job_type{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.job_name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.company{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.points_info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.point_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.description_button{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: $text_secondary;
+    font-size: 14px;
+    line-height: 18px;
+    max-height: 90px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}

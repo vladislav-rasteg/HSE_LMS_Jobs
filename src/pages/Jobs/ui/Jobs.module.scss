@@ -1,0 +1,85 @@
+@import '@styles/variables';
+
+.jobs_filter{
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.group_name{
+    color: $text_secondary;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.filter_group{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    input{
+        width: 80px;
+        padding: 10px;
+        background: $bg_island;
+        stroke: none;
+        border: 1px solid $border_secondary;
+        border-radius: 8px;
+    }
+}
+
+.filter_check{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 32px;
+    font-size: 14px;
+    border: 1px solid $border_secondary;
+    border-radius: 8px;
+    transition: 400ms;
+
+    &.active{
+        background: $brand_color;
+        color: $text_invert;
+    }
+}
+
+.hot_jobs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+    background: $bg_brand_soft;
+    border-radius: 22px;
+}
+
+.label{
+    display: flex;
+    gap: 12px;
+    background: $brand_color;
+    width: fit-content;
+    color: $text_invert;
+    padding: 6px 22px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.jobs_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
