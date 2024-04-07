@@ -1,0 +1,56 @@
+@import "@styles/variables";
+
+.modal_body{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: start;
+    width: 700px;
+}
+
+.job_block{
+    width: 100%;
+    background: $bg_main;
+    padding: 22px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.salary{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.points_info{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.point_info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contacts{
+    display: flex;
+    width: 100%;
+    border: 1px solid $border_secondary;
+    padding: 22px;
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+}

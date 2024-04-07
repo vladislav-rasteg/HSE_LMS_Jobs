@@ -31,11 +31,29 @@
 
 .additional{
     display: flex;
-    gap: 22px;
+    gap: 32px;
     align-items: center;
 
     img{
         height: 24px;
         width: auto;
     }
+}
+
+.notifications_wrapper{
+    position: relative;
+}
+
+.notifications{
+    display: flex;
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    color: #FFFFFF;
+    background: red;
+    position: absolute;
+    right: -16px;
+    top: -16px;
 }

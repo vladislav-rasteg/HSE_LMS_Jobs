@@ -8,12 +8,16 @@ import { iJob } from "../../../pages/Jobs/ui/Jobs";
 interface JobCardProps {
     theme?: string;
     data: iJob;
+    onClick: any;
 }
 
-export const JobCard = ({theme = 'default', data}:JobCardProps) => {
+export const JobCard = ({theme = 'default', data, onClick}:JobCardProps) => {
   
   return(
-    <div className={classNames(s.jobCard, {[s.contrast]: theme === 'contrast'})}>
+    <div 
+        className={classNames(s.jobCard, {[s.contrast]: theme === 'contrast'})}
+        onClick = {() => onClick(data)}
+    >
         <div className={s.job_info}>
             <div className={s.main_info}>
                 <p className={s.job_type}>

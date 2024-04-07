@@ -19,7 +19,12 @@ export const Header = () => {
         </div>
         
         <div className={s.additional}>
-            <img src={NotificationsIcon} />
+            <div className={s.notifications_wrapper}>
+                <img src={NotificationsIcon} />
+                <div className={s.notifications}>
+                    8
+                </div>
+            </div>
             <img src={MessageIcon} />
             <img src={InboxIcon} />
         </div>

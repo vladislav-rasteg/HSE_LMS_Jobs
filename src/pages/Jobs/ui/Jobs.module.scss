@@ -1,5 +1,10 @@
 @import '@styles/variables';
 
+.page_heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 .jobs_filter{
     display: flex;
     gap: 32px;
